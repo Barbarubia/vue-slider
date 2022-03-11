@@ -48,6 +48,9 @@ const settings = {
                 this.activeIndex++;
             }
         }
+    },
+    created() {
+        setInterval(this.next, 3000);
     }
 };
 
