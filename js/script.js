@@ -38,6 +38,13 @@ const settings = {
             } else {
                 this.activeIndex--;
             }
+        },
+        next() {
+            if (this.activeIndex == this.arrLocations.length -1) {
+                this.activeIndex = 0;
+            } else {
+                this.activeIndex++;
+            }
         }
     }
 };
