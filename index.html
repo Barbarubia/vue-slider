@@ -13,28 +13,28 @@
 	<div id="root">
 		<div class="slider">
 			<div class="slide">
-				<img src="img/01.jpg" alt="Svezia">
+				<img :src="'img/' + arrLocations[0].img" alt="arrLocations.title">
 				<div class="slide-contents">
-					<h2 class="slide-title">Svezia</h2>
-					<p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.</p>
+					<h2 class="slide-title">{{ arrLocations[0].title }}</h2>
+					<p class="slide-text">{{ arrLocations[0].text }}</p>
 				</div>
 			</div>
 
 			<div class="thumbs">
 				<div class="thumb active">
-					<img src="img/01.jpg" alt="Svezia">
+					<img :src="'img/' + arrLocations[0].img" :alt="arrLocations[0].title">
 				</div>
 				<div class="thumb">
-					<img src="img/02.jpg" alt="Svizzera">
+					<img :src="'img/' + arrLocations[1].img" :alt="arrLocations[1].title">
 				</div>
 				<div class="thumb">
-					<img src="img/03.jpg" alt="Gran Bretagna">
+					<img :src="'img/' + arrLocations[2].img" :alt="arrLocations[2].title">
 				</div>
 				<div class="thumb">
-					<img src="img/04.jpg" alt="Germania">
+					<img :src="'img/' + arrLocations[3].img" :alt="arrLocations[3].title">
 				</div>
 				<div class="thumb">
-					<img src="img/05.jpg" alt="Paradise">
+					<img :src="'img/' + arrLocations[4].img" :alt="arrLocations[4].title">
 				</div>
 
 				<button class="btn-control btn-previus">&and;</button>
