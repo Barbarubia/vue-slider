@@ -21,7 +21,7 @@
 			</div>
 
 			<div class="thumbs">
-				<div v-for="(thumb, index) in arrLocations" class="thumb" :class="index == activeIndex ? 'active' : ''">
+				<div v-for="(thumb, index) in arrLocations" @click="activeIndex = index" class="thumb" :class="index == activeIndex ? 'active' : ''">
 					<img :src="'img/' + thumb.img" :alt="thumb.title">
 				</div>
 				<!-- <div class="thumb active">
