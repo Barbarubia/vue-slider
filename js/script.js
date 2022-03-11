@@ -30,6 +30,15 @@ const settings = {
                 text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam.'
             }
         ],
+    },
+    methods: {
+        previous() {
+            if (this.activeIndex == 0) {
+                this.activeIndex = this.arrLocations.length -1;
+            } else {
+                this.activeIndex--;
+            }
+        }
     }
 };
 
