@@ -24,21 +24,6 @@
 				<div v-for="(thumb, index) in arrLocations" @click="activeIndex = index" class="thumb" :class="index == activeIndex ? 'active' : ''">
 					<img :src="'img/' + thumb.img" :alt="thumb.title">
 				</div>
-				<!-- <div class="thumb active">
-					<img :src="'img/' + arrLocations[0].img" :alt="arrLocations[0].title">
-				</div>
-				<div class="thumb">
-					<img :src="'img/' + arrLocations[1].img" :alt="arrLocations[1].title">
-				</div>
-				<div class="thumb">
-					<img :src="'img/' + arrLocations[2].img" :alt="arrLocations[2].title">
-				</div>
-				<div class="thumb">
-					<img :src="'img/' + arrLocations[3].img" :alt="arrLocations[3].title">
-				</div>
-				<div class="thumb">
-					<img :src="'img/' + arrLocations[4].img" :alt="arrLocations[4].title">
-				</div> -->
 
 				<button @click="previous" class="btn-control btn-previus">&and;</button>
 				<button @click="next" class="btn-control btn-next">&or;</button>
