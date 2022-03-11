@@ -12,7 +12,7 @@
 
 	<div id="root">
 		<div class="slider">
-			<div class="slide">
+			<div @mouseover="stopAutoplay" @mouseleave="autoplay" class="slide">
 				<img :src="'img/' + arrLocations[activeIndex].img" alt="arrLocations[activeIndex].title">
 				<div class="slide-contents">
 					<h2 class="slide-title">{{ arrLocations[activeIndex].title }}</h2>

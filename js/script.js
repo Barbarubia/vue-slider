@@ -47,10 +47,19 @@ const settings = {
             } else {
                 this.activeIndex++;
             }
+        },
+        // Funzione che incrementa l'indice attivo ogni 3 secondi e lo fa riportare a zero quando arriva all'ultimo elemento
+        autoplay() {
+            this.interval = setInterval(this.next, 3000);
+        },
+        // Funzione che stoppa l'incremento dell'indice attivo
+        stopAutoplay() {
+            clearInterval(this.interval);
         }
     },
+    // Esecuzione della funzione autoplay quando viene creata l'app
     created() {
-        setInterval(this.next, 3000);
+        this.autoplay();
     }
 };
 
