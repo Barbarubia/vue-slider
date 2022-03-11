@@ -32,6 +32,7 @@ const settings = {
         ],
     },
     methods: {
+        // Funzione che al click del bottone seleziona la thumb precedente. Se la thumb attiva è la prima, il click riporta all'ultima thumb
         previous() {
             if (this.activeIndex == 0) {
                 this.activeIndex = this.arrLocations.length -1;
@@ -39,6 +40,7 @@ const settings = {
                 this.activeIndex--;
             }
         },
+        // Funzione che al click del bottone seleziona la thumb successiva. Se la thumb attiva è l'ultima, il click riporta alla prima thumb
         next() {
             if (this.activeIndex == this.arrLocations.length -1) {
                 this.activeIndex = 0;
