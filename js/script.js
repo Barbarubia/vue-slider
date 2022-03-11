@@ -2,6 +2,7 @@
 const settings = {
     el: '#root',
     data: {
+        activeIndex: 0, // Definisco un indice di partenza a cui applicare la classe active
         arrLocations: [
             {
                 title: 'Svezia',
