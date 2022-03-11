@@ -1,6 +1,3 @@
-// Avvio Vue.js
-const app = new Vue (settings);
-
 // Definizione delle impostazioni di Vue
 const settings = {
     el: '#root',
@@ -34,3 +31,6 @@ const settings = {
         ],
     }
 };
+
+// Avvio Vue.js
+const app = new Vue (settings);
